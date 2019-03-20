@@ -1,0 +1,20 @@
+package library;
+  
+  public abstract class LibraryBook implements Comparable<LibraryBook> extends Book 
+{
+  protected String callNumber;
+  
+  public void LibraryBook(){
+   callNumber = ""; 
+   Book();
+  }
+  
+  public void LibraryBook(String c){
+  }
+  
+  public void compareTo(){
+  }
+  
+  
+  
+}
