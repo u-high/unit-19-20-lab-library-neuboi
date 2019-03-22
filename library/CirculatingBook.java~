@@ -1,0 +1,45 @@
+public class CirculatingBook extends LibraryBook
+{
+  protected String currentHolder;
+  protected String dueDate;
+  
+  public CirculatingBook(){
+    super();
+    currentHolder = "";
+    dueDate = ""
+  }
+  
+  public String getCurrentHolder(){
+    return currentHolder
+  }
+  public String getDueDate(){
+    return dueDate
+  }
+  
+  public void setCurrentHolder(String a){
+    currentHolder = a;
+  }
+  public void setDueDate(String a){
+    dueDate = a;
+  }
+  
+  public void checkout(String patron, String due){
+    currentHolder = patron;
+    dueDate = due;
+  }
+  
+   public void returned(){
+    
+  }
+  
+  public String circulationStatus(){
+    return currentHolder + " " + dueDate +
+  }
+  
+  public int compareTo(){
+  }
+  
+  public String toString(){
+  }
+    
+}

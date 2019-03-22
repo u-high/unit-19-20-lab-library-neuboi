@@ -14,18 +14,21 @@ package library;
     callNumber = c;
   }
   
-  public void getCallNumber(){
+  public String getCallNumber(){
+    return callNumber;
   }
   
-  public void setCallNumber(){
+  public void setCallNumber(String c){
+    callNumber = c;
   }
   
-  abstract void checkout();
+  abstract void checkout(String patron, String due);
   abstract void returned();
-  abstract void circulationStatus();
+  abstract String circulationStatus();
   
   
-  public void compareTo(){
+  public int compareTo(LibraryBook lib){
+    return title.compareTo(lib.getTitle());
   }
   
   public String toString(){

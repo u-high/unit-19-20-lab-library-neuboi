@@ -18,18 +18,24 @@ public class Book
      isbn = i;
    }
    
-   public void getAuthor(){
+   public String getAuthor(){
+     return author;
    }
-   public void getTitle(){
+   public String getTitle(){
+     return title;
    }
-   public void getISBN(){
+   public String getISBN(){
+     return isbn;
    }
    
-   public void setAuthor(){
+   public void setAuthor(String a){
+     author = a;
    }
-   public void setTitle(){
+   public void setTitle(String t){
+     title = t;
    }
-   public void setISBN(){
+   public void setISBN(String i){
+     isbn = i;
    }
    
    public String toString(){
